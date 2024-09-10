@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .head,.footer{
+            width: 100%;
+            height: 300px;
+            background-color:beige;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            border: 2px solid black;
+            margin: 10px;
+    
+    
+        }
+        .box-row{
+            width: 250px;
+            height: 250px;
+            background-color: aqua;
+            border: 2px solid red;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            
+        }
+        .box-column{
+            width: 250px;
+            height: 250px;
+            background-color: aqua;
+            border: 2px solid red;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .box{
+            width: 250px;
+            height: 210px;
+            background-color: aqua;
+            border: 2px solid red;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+        .content{
+            width: 95%;
+            height: 300px;
+            background-color:rgb(161, 161, 109);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            border: 2px solid black;
+        }
+        .innerbox{
+            width: 100px;
+            height: 100px;
+            border: 1px solid blue;
+            background-color: rgb(217, 224, 137);
+        }
+        
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <div class="box-row" id="box1">
+                <div class="innerbox" id="innerbox1"></div>
+                <div class="innerbox" id="innerbox2"></div>
+            </div>
+            <div class="box-row" id="box2">
+                <div class="innerbox" id="innerbox1"></div>
+                <div class="innerbox" id="innerbox2"></div>
+            </div>
+            <div class="box-column" id="box3">
+                <div class="innerbox" id="innerbox1"></div>
+                <div class="innerbox" id="innerbox2"></div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="box" id="box4">4</div>
+            <div class="box" id="box5">5</div>
+            <div class="box" id="box6">6</div>
+        </div>
+        <div class="footer">
+            <div class="box-column" id="box7">
+                <div class="innerbox" id="innerbox1"></div>
+                <div class="innerbox" id="innerbox2"></div>
+            </div>
+            <div class="box-row" id="box8">
+                <div class="innerbox" id="innerbox1"></div>
+                <div class="innerbox" id="innerbox2"></div>
+            </div>
+            <div class="box-column" id="box9">
+                <div class="innerbox" id="innerbox1"></div>
+                <div class="innerbox" id="innerbox2"></div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
